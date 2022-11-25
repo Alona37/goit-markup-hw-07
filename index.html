@@ -15,43 +15,51 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 
 	<body>
-		<!--Секція шапка-->
+		<!--Блок header-->
+
 		<header class="header">
-			<div class="flex container">
-				<nav class="flex site-nav">
+			<div class="container flex">
+				<!-- Вкладений блок navigation -->
+
+				<nav class="nav flex">
 					<!-- prettier-ignore -->
-					<a class="logo" href="./index.html">
-          <span class="web">Web</span>Studio</a>
-					<ul class="flex nav-list">
-						<li class="nav-list-item">
-							<a class="nav-link nav-link-current" href="./index.html">
+					<a class="logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+					<ul class="nav__list flex">
+						<li class="nav__item">
+							<a class="nav__link nav__link--current" href="./index.html">
 								Студія
 							</a>
 						</li>
-						<li class="nav-list-item">
-							<a class="nav-link" href="./portfolio.html">Портфоліо</a>
+						<li class="nav__item">
+							<a class="nav__link" href="./portfolio.html">Портфоліо</a>
 						</li>
-						<li class="nav-list-item">
-							<a class="nav-link" href="#">Контакти</a>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Контакти</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="flex contacts-list-top">
-					<li class="contacts-item flex">
-						<a class="contacts flex" href="mailto:info@devstudio.com">
-							<svg class="contacts-icon" width="16" height="12">
+				<!-- Вкладений блок header contacts -->
+
+				<ul class="header-contacts__list flex">
+					<li class="header-contacts__item flex">
+						<a
+							class="header-contacts__link flex"
+							href="mailto:info@devstudio.com"
+						>
+							<svg class="header-contacts__icon" width="16" height="12">
 								<use href="./images/icons.svg#icon-envelope"></use>
 							</svg>
 							info@devstudio.com
 						</a>
 					</li>
-					<li class="contacts-item">
-						<a class="contacts flex" href="tel:+380961111111">
-							<svg class="contacts-icon" width="10" height="16">
+					<li class="header-contacts__item">
+						<a class="header-contacts__link flex" href="tel:+380961111111">
+							<svg class="header-contacts__icon" width="10" height="16">
 								<use href="./images/icons.svg#icon-smartphone"></use>
 							</svg>
 							+38 096 111 11 11
@@ -61,63 +69,66 @@
 			</div>
 		</header>
 		<main>
-			<!--Секція Герой-->
-			<section class="section hero">
+			<!--Секція hero-->
+
+			<section class="hero section">
 				<div class="container">
-					<h1 class="hero-headline">Ефективні рішення для вашого бізнесу</h1>
-					<button data-modal-open class="hero-btn" type="button">
+					<h1 class="hero__headline">Ефективні рішення для вашого бізнесу</h1>
+					<button data-modal-open class="hero__btn" type="button">
 						Замовити послугу
 					</button>
 				</div>
 			</section>
-			<!--Секція з особливостями-->
-			<section class="section features">
+
+			<!--Секція з features-->
+
+			<section class="section-features section">
 				<div class="container">
-					<h2 class="title-features">Особливості</h2>
-					<ul class="flex features-list">
-						<li class="features-list-item">
-							<div class="features-icon-item flex">
-								<svg class="features-icons" width="70" height="70">
+					<h2 class="features__title">Особливості</h2>
+					<ul class="flex">
+						<li class="features__item">
+							<div class="features__icon flex">
+								<svg class="" width="70" height="70">
 									<use href="./images/icons.svg#icon-antenna"></use>
 								</svg>
 							</div>
-							<h3 class="subtitle-features">УВАГА ДО ДЕТАЛЕЙ</h3>
-							<p class="desc-features">
+							<h3 class="features__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+							<p class="features__desc">
 								Ідейні міркування, і навіть початок повсякденної роботи з
 								формування позиції.
 							</p>
 						</li>
-						<li class="features-list-item">
-							<div class="features-icon-item flex">
-								<svg class="features-icons" width="70" height="70">
+						<li class="features__item">
+							<div class="features__icon flex">
+								<svg class="" width="70" height="70">
 									<use href="./images/icons.svg#icon-clock"></use>
 								</svg>
 							</div>
-							<h3 class="subtitle-features">ПУНКТУАЛЬНІСТЬ</h3>
-							<p class="desc-features">
+							<h3 class="features__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+							<p class="features__desc">
 								Завдання організації, особливо рамки і місце навчання кадрів
 								тягне у себе.
 							</p>
 						</li>
-						<li class="features-list-item">
-							<div class="features-icon-item flex">
-								<svg class="features-icons" width="70" height="70">
+						<li class="features__item">
+							<div class="features__icon flex">
+								<svg class="" width="70" height="70">
 									<use href="./images/icons.svg#icon-diagram"></use>
 								</svg>
 							</div>
-							<h3 class="subtitle-features">ПЛАНУВАННЯ</h3>
-							<p class="desc-features">
+							<h3 class="features__subtitle">ПЛАНУВАННЯ</h3>
+							<p class="features__desc">
 								Так само консультація з широким активом значною мірою зумовлює.
 							</p>
 						</li>
-						<li class="features-list-item">
-							<div class="features-icon-item flex">
-								<svg class="features-icons" width="70" height="70">
+						<li class="features__item">
+							<div class="features__icon flex">
+								<svg class="" width="70" height="70">
 									<use href="./images/icons.svg#icon-astronaut"></use>
 								</svg>
 							</div>
-							<h3 class="subtitle-features">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-							<p class="desc-features">
+							<h3 class="features__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+							<p class="features__desc">
 								Значимість цих проблем настільки очевидна, що реалізація
 								планових завдань.
 							</p>
@@ -125,66 +136,70 @@
 					</ul>
 				</div>
 			</section>
-			<!--Секція Чим ми займаємося-->
-			<section class="section our-job">
+
+			<!--Секція directions-->
+
+			<section class="section-directions section">
 				<div class="container">
-					<h2 class="section-tittle">Чим ми займаємося</h2>
-					<ul class="flex our-job-list">
-						<li class="job-demo">
+					<h2 class="title">Чим ми займаємося</h2>
+					<ul class="directions flex">
+						<li class="directions__image">
 							<img
 								src="./images/code_writting.jpg"
 								alt="code_writting"
 								width="370"
 								height="294"
 							/>
-							<div class="job-demo-wrap">
-								<p class="job-demo-label">Десктопні додатки</p>
+							<div class="directions__inner">
+								<p class="directions__desc">Десктопні додатки</p>
 							</div>
 						</li>
-						<li class="job-demo">
+						<li class="directions__image">
 							<img
 								src="./images/mobile_app.jpg"
 								alt="mobile_app"
 								width="370"
 								height="294"
 							/>
-							<div class="job-demo-wrap">
-								<p class="job-demo-label">Мобільні додатки</p>
+							<div class="directions__inner">
+								<p class="directions__desc">Мобільні додатки</p>
 							</div>
 						</li>
-						<li class="job-demo">
+						<li class="directions__image">
 							<img
 								src="./images/java.jpg"
 								alt="java"
 								width="370"
 								height="294"
 							/>
-							<div class="job-demo-wrap">
-								<p class="job-demo-label">Дизайнерські рішення</p>
+							<div class="directions__inner">
+								<p class="directions__desc">Дизайнерські рішення</p>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<!--Секція Команда-->
-			<section class="section our-team">
+
+			<!--Секція team-->
+
+			<section class="section-team section">
 				<div class="container">
-					<h2 class="section-tittle">Наша команда</h2>
-					<ul class="flex our-team-list">
-						<li class="team-card">
+					<h2 class="title">Наша команда</h2>
+					<ul class="team__list flex">
+						<li class="team__card">
 							<img
 								src="./images/product_designer.jpg"
 								alt="product_designer"
 								width="270"
 								height="260"
 							/>
-							<div class="team-desk">
-								<h3 class="team-members">Ігор Дем'яненко</h3>
-								<p class="job-title" lang="en">Product Designer</p>
-								<ul class="socials flex">
+							<div class="team__desk">
+								<h3 class="team__members">Ігор Дем'яненко</h3>
+								<p class="team__name" lang="en">Product Designer</p>
+								<ul class="team__socials flex">
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://www.instagram.com/"
 											aria-label="Instagram"
 											target="_blank"
@@ -197,7 +212,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://twitter.com"
 											aria-label="Twitter"
 											target="_blank"
@@ -210,7 +225,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://facebook.com"
 											aria-label="Facebook"
 											target="_blank"
@@ -223,7 +238,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://linkedin.com"
 											aria-label="Linkedin"
 											target="_blank"
@@ -237,20 +252,20 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-card">
+						<li class="team__card">
 							<img
 								src="./images/frontend_developer.jpg"
 								alt="frontend_developer"
 								width="270"
 								height="260"
 							/>
-							<div class="team-desk">
-								<h3 class="team-members">Ольга Рєпіна</h3>
-								<p class="job-title" lang="en">Frontend Developer</p>
-								<ul class="socials flex">
+							<div class="team__desk">
+								<h3 class="team__members">Ольга Рєпіна</h3>
+								<p class="team__name" lang="en">Frontend Developer</p>
+								<ul class="team__socials flex">
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://www.instagram.com/"
 											aria-label="Instagram"
 											target="_blank"
@@ -263,7 +278,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://twitter.com"
 											aria-label="Twitter"
 											target="_blank"
@@ -276,7 +291,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://facebook.com"
 											aria-label="Facebookr"
 											target="_blank"
@@ -289,7 +304,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://linkedin.com"
 											aria-label="Linkedin"
 											target="_blank"
@@ -303,20 +318,20 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-card">
+						<li class="team__card">
 							<img
 								src="./images/marketing.jpg"
 								alt="marketing"
 								width="270"
 								height="260"
 							/>
-							<div class="team-desk">
-								<h3 class="team-members">Микола Тарасов</h3>
-								<p class="job-title" lang="en">Marketing</p>
-								<ul class="socials flex">
+							<div class="team__desk">
+								<h3 class="team__members">Микола Тарасов</h3>
+								<p class="team__name" lang="en">Marketing</p>
+								<ul class="team__socials flex">
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://www.instagram.com/"
 											aria-label="Instagram"
 											target="_blank"
@@ -329,7 +344,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://twitter.com"
 											aria-label="Twitter"
 											target="_blank"
@@ -342,7 +357,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://facebook.com"
 											aria-label="Facebookr"
 											target="_blank"
@@ -355,7 +370,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://linkedin.com"
 											aria-label="Linkedin"
 											target="_blank"
@@ -369,20 +384,20 @@
 								</ul>
 							</div>
 						</li>
-						<li class="team-card">
+						<li class="team__card">
 							<img
 								src="./images/ui_designer.jpg"
 								alt="ui_designer"
 								width="270"
 								height="260"
 							/>
-							<div class="team-desk">
-								<h3 class="team-members">Михайло Єрмаков</h3>
-								<p class="job-title" lang="en">UI Designer</p>
-								<ul class="socials flex">
+							<div class="team__desk">
+								<h3 class="team__members">Михайло Єрмаков</h3>
+								<p class="team__name" lang="en">UI Designer</p>
+								<ul class="team__socials flex">
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://www.instagram.com/"
 											aria-label="Instagram"
 											target="_blank"
@@ -395,7 +410,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://twitter.com"
 											aria-label="Twitter"
 											target="_blank"
@@ -408,7 +423,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://facebook.com"
 											aria-label="Facebookr"
 											target="_blank"
@@ -421,7 +436,7 @@
 									</li>
 									<li>
 										<a
-											class="social-link flex"
+											class="team__link flex"
 											href="https://linkedin.com"
 											aria-label="Linkedin"
 											target="_blank"
@@ -438,85 +453,87 @@
 					</ul>
 				</div>
 			</section>
-			<!-- Постійні кліенти -->
-			<section class="section">
+
+			<!-- Секція clients -->
+
+			<section class="section__clients section">
 				<div class="container">
-					<h2 class="section-tittle">Постійні кліенти</h2>
-					<ul class="client-list flex">
-						<li class="clients-list-item">
+					<h2 class="title">Постійні кліенти</h2>
+					<ul class="clients__list flex">
+						<li class="clients__item">
 							<a
-								class="clients-link"
+								class="clients__link"
 								href=""
 								aria-label="Client-1"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-1-clients"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-list-item">
+						<li class="clients__item">
 							<a
-								class="clients-link"
+								class="clients__link"
 								href=""
 								aria-label="Client-2"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-2-clients"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-list-item">
+						<li class="clients__item">
 							<a
-								class="clients-link"
+								class="clients__link"
 								href=""
 								aria-label="Client-3"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-3-clients"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-list-item">
+						<li class="clients__item">
 							<a
-								class="clients-link"
+								class="clients__link"
 								href=""
 								aria-label="Client-4"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-4-clients"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-list-item">
+						<li class="clients__item">
 							<a
-								class="clients-link"
+								class="clients__link"
 								href=""
 								aria-label="Client-5"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-5-clients"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="clients-list-item">
+						<li class="clients__item">
 							<a
-								class="clients-link"
+								class="clients__link"
 								href=""
 								aria-label="Client-6"
 								target="_blank"
 								rel="noreferrer noopener"
 							>
-								<svg class="clients-icon" width="106" height="60">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-6-clients"></use>
 								</svg>
 							</a>
@@ -525,39 +542,43 @@
 				</div>
 			</section>
 		</main>
-		<!--Секція Підвал-->
-		<footer class="footer">
+
+		<!--Секція footer-->
+
+		<footer class="section-footer">
 			<div class="container flex">
 				<!-- prettier-ignore -->
-				<div class="footer-contacts-item">
-        <a class="logo logo-footer" href="./index.html">
-          <span class="web">Web</span>Studio</a>
-        <address class="footer-address">
-          <ul>
-            <li class="footer-list-item">
-              <a class="city-address" href="">
-                м. Київ, пр-т Лесі Українки, 26
-              </a>
-            </li>
-            <li class="footer-list-item">
-              <a class="contacts-footer" href="mailto:info@devstudio.com">
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="footer-list-item">
-              <a class="contacts-footer" href="tel:+380961111111">
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
-				<div class="footer-links">
-					<h3 class="footer-link-headline">Приєднуйтесь</h3>
-					<ul class="socials flex">
+				<div class="footer__contacts">
+				<a class="logo  footer__logo" href="./index.html"><span class="logo__web">Web</span>Studio</a>
+				<address class="footer-address">
+					<ul>
+						<li class="footer-address__item">
+							<a class="footer-address__city" href="">
+								м. Київ, пр-т Лесі Українки, 26
+							</a>
+						</li>
+						<li class="footer-address__item">
+							<a class="footer-address__contacts" href="mailto:info@devstudio.com">
+								info@devstudio.com
+							</a>
+						</li>
+						<li class="footer-address__item">
+							<a class="footer-address__contacts" href="tel:+380961111111">
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+
+				<!-- Вкладенний блок footer-socials -->
+
+				<div class="footer-socials">
+					<h3 class="footer-socials__subtitle">Приєднуйтесь</h3>
+					<ul class="team__socials flex">
 						<li>
 							<a
-								class="social-link social-footer flex"
+								class="team__link footer-socials__link flex"
 								href="https://www.instagram.com/"
 								aria-label="Instagram"
 								target="_blank"
@@ -570,7 +591,7 @@
 						</li>
 						<li>
 							<a
-								class="social-link social-footer flex"
+								class="team__link footer-socials__link flex"
 								href="https://twitter.com"
 								aria-label="Twitter"
 								target="_blank"
@@ -583,7 +604,7 @@
 						</li>
 						<li>
 							<a
-								class="social-link social-footer flex"
+								class="team__link footer-socials__link flex"
 								href="https://facebook.com"
 								aria-label="Facebookr"
 								target="_blank"
@@ -596,7 +617,7 @@
 						</li>
 						<li>
 							<a
-								class="social-link social-footer flex"
+								class="team__link footer-socials__link flex"
 								href="https://linkedin.com"
 								aria-label="Linkedin"
 								target="_blank"
@@ -609,21 +630,23 @@
 						</li>
 					</ul>
 				</div>
+
 				<!-- Форма для підвала -->
-				<div class="footer-form-group">
-					<p class="footer-form-name">Підпишіться на розсилку</p>
-					<form class="footer-form flex">
-						<label class="footer-form-wrapper">
+
+				<div class="footer-form">
+					<p class="footer-form__title">Підпишіться на розсилку</p>
+					<form class="flex">
+						<label>
 							<input
-								class="footer-form-field"
+								class="footer-form__field"
 								type="email"
 								name="email"
 								placeholder="E-mail"
 							/>
 						</label>
-						<button class="footer-form-btn" type="submit">
+						<button class="footer-form__btn" type="submit">
 							Підписатися
-							<svg class="footer-form-icon" width="24px" height="24px">
+							<svg class="footer-form__icon" width="24px" height="24px">
 								<use href="./images/icons.svg#icon-send"></use>
 							</svg>
 						</button>
@@ -631,81 +654,86 @@
 				</div>
 			</div>
 		</footer>
+
 		<!-- Модальне вікно -->
+
 		<div data-modal class="backdrop is-hidden">
 			<div class="modal">
 				<button class="modal-close" data-modal-close>
-					<svg class="modal-close-icon" width="11px" height="11px">
+					<svg class="modal-close__icon" width="11px" height="11px">
 						<use href="./images/icons.svg#icon-modal-close"></use>
 					</svg>
 				</button>
-				<strong class="modal-form-headline">
+				<strong class="modal__headline">
 					Залиште свої дані, ми вам передзвонимо
 				</strong>
 				<form class="modal-form flex-modal" name="modal_form">
-					<div class="modal-form-group" role="group">
-						<label class="modal-form-label flex-modal">
+					<div class="modal-form__group" role="group">
+						<label class="modal-form__label flex-modal">
 							Ім'я
-							<div class="modal-form-wrapper">
-								<input class="modal-form-field" type="name" name="user_name" />
-								<svg class="modal-form-icon" width="18px" height="18px">
+							<div class="modal-form__wrapper">
+								<input class="modal-form__field" type="name" name="user_name" />
+								<svg class="modal-form__icon" width="18px" height="18px">
 									<use href="./images/icons.svg#icon-person-black"></use>
 								</svg>
 							</div>
 						</label>
 					</div>
-					<div class="modal-form-group flex-modal">
-						<label class="modal-form-label flex-modal">
+					<div class="modal-form__group flex-modal">
+						<label class="modal-form__label flex-modal">
 							Телефон
-							<div class="modal-form-wrapper">
-								<input class="modal-form-field" type="tel" name="user_phone" />
-								<svg class="modal-form-icon" width="18px" height="18px">
+							<div class="modal-form__wrapper">
+								<input class="modal-form__field" type="tel" name="user_phone" />
+								<svg class="modal-form__icon" width="18px" height="18px">
 									<use href="./images/icons.svg#icon-phone-black"></use>
 								</svg>
 							</div>
 						</label>
 					</div>
-					<div class="modal-form-group flex-modal">
-						<label class="modal-form-label flex-modal">
+					<div class="modal-form__group flex-modal">
+						<label class="modal-form__label flex-modal">
 							Пошта
-							<div class="modal-form-wrapper">
-								<input class="modal-form-field" type="mail" name="user_mail" />
-								<svg class="modal-form-icon" width="18px" height="18px">
+							<div class="modal-form__wrapper">
+								<input class="modal-form__field" type="mail" name="user_mail" />
+								<svg class="modal-form__icon" width="18px" height="18px">
 									<use href="./images/icons.svg#icon-email-black"></use>
 								</svg>
 							</div>
 						</label>
 					</div>
-					<label class="modal-form-label flex-modal" for="user_message">
+					<label class="modal-form__label flex-modal" for="user_message">
 						Коментар
 					</label>
 					<textarea
-						class="modal-form-message flex-modal"
+						class="modal-form__message flex-modal"
 						name="user_message"
 						id="user_message"
 						rows="7"
 						placeholder="Введіть текст"
 					></textarea>
 
-					<div class="modal-form-agreement" role="group">
-						<label class="modal-form-agreement-desc">
+					<div class="modal-agreement" role="group">
+						<label class="modal-agreement__desc">
 							<input
-								class="modal-form-checkbox visually-hidden"
+								class="modal-agreement__checkbox visually-hidden"
 								type="checkbox"
 								name="user_agreement_check"
 							/>
-							<svg class="modal-form-agreement-icon" width="16px" height="15px">
+							<svg class="modal-agreement__icon" width="16px" height="15px">
 								<use
-									class="uncheck"
+									class="modal-agreement__uncheck"
 									href="./images/icons.svg#icon-uncheck"
 								></use>
-								<use class="check" href="./images/icons.svg#icon-check"></use>
+								<use
+									class="modal-agreement__check"
+									href="./images/icons.svg#icon-check"
+								></use>
 							</svg>
 							Погоджуюся з розсилкою та приймаю
-							<a class="modal-form-agreement-link" href="">Умови договору</a>
+							<a class="modal-agreement__link" href="">Умови договору</a>
 						</label>
 					</div>
-					<button class="modal-form-btn hero-btn" type="submit">
+					<button class="modal-submit__btn type="submit">
 						Відправити
 					</button>
 				</form>
