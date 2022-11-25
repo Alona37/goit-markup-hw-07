@@ -18,8 +18,7 @@
 	}
 
 	&__subtitle {
-		font-size: 14px;
-		line-height: 1.14;
+		@include font(14px, 1.145, inherit);
 		margin-bottom: 10px;
 	}
 
