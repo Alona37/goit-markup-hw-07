@@ -8,20 +8,22 @@
 // Base styles
 
 @import "./base/reset";
-@import "./base/base";
+@import "./base/common";
 
 // Components styles
-
 @import "./components/header";
-@import "./components/hero";
-@import "./components/features";
-@import "./components/directions";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/backdrop";
+@import "./components/flex";
+@import "./components/section";
+@import "./components/title";
 
-// Portfolio
-
-@import "./components/portfolio-filters";
-@import "./components/portfolio-projects";
+// Layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/directions";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/backdrop";
+@import "./layout/portfolio-filters";
+@import "./layout/portfolio-projects";
